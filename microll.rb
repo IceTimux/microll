@@ -17,7 +17,7 @@ readers = [
 
 Thread.new do
   loop do
-    sleep 60 * 30
+    sleep 60 * 15
     HomePage.update(readers)
   end
 end
