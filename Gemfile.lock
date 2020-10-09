@@ -1,0 +1,34 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    concurrent-ruby (1.1.7)
+    i18n (1.8.5)
+      concurrent-ruby (~> 1.0)
+    mini_portile2 (2.4.0)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    nokogiri (1.10.10)
+      mini_portile2 (~> 2.4.0)
+    rack (2.2.3)
+    rack-protection (2.1.0)
+      rack
+    relative_time (1.1.0)
+      i18n
+    ruby2_keywords (0.0.2)
+    sinatra (2.1.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
+      tilt (~> 2.0)
+    tilt (2.0.10)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  nokogiri!
+  relative_time!
+  sinatra!
+
+BUNDLED WITH
+   2.1.4

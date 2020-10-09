@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Microll</title>
+  <style>
+    ol small, ul small {
+      color: grey;
+    }
+
+    a:visited {
+      color: #551a8b;
+    }
+  </style>
+</head>
+<body>
+  <h1>Microll</h1>
+  <ol>
+    <% items.sort_by{ |key| key['date'] }.reverse.each do |item| %>
+      <li>
+        <a href="<%= item['url'] %>"><%= item['title'] %></a>
+        <small>
+          (<%= item['relative_time'] %>)
+        </small>
+      </li>
+    <% end %>
+  </ol>
+  <br>
+  <center>
+    <small>
+      Last updated <%= RelativeTime.in_words(DateTime.now, updated_at).gsub('in ', '') + ' ago.'  %>
+    </small>
+  </center>
+</body>
+</html>
