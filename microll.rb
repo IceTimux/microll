@@ -14,6 +14,13 @@ readers = [
   LobstersReader.new('https://lobste.rs/rss')
 ]
 
+Thread.new do
+  loop do
+    sleep 60 * 30
+    HomePage.update(readers)
+  end
+end
+
 get '/' do
   items = File.open('./data/home_page.dat').readlines.map do |item|
     eval(item.chomp)
@@ -27,9 +34,3 @@ get '/' do
   erb :index, :locals => locals
 end
 
-Thread.new do
-  loop do
-    sleep 60 * 30
-    HomePage.update(readers)
-  end
-end
