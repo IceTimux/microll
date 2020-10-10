@@ -15,6 +15,8 @@ readers = [
   LobstersReader.new('https://lobste.rs/rss')
 ]
 
+HomePage.update(readers)
+
 Thread.new do
   loop do
     sleep 60 * 15
