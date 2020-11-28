@@ -3,6 +3,7 @@
 source 'https://rubygems.org' do
   gem 'nokogiri'
   gem 'rack'
+  gem 'rake'
   gem 'relative_time'
   gem 'sinatra'
 end
