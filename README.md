@@ -1,5 +1,7 @@
 # Microll
 
+[![Build Status](https://travis-ci.com/IceTimux/microll.svg?branch=master)](https://travis-ci.com/IceTimux/microll)
+
 Microll aggregates various RSS feeds into a single feed for consumption.
 
 ## Demo
