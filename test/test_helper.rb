@@ -2,7 +2,6 @@
 
 require 'simplecov'
 SimpleCov.start
+require 'minitest/autorun'
 require 'nokogiri'
 require 'open-uri'
-require 'minitest'
-require 'minitest/autorun'

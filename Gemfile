@@ -6,4 +6,6 @@ source 'https://rubygems.org' do
   gem 'rake'
   gem 'relative_time'
   gem 'sinatra'
+  gem 'simplecov'
+  gem 'minitest'
 end
