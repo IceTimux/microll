@@ -1,6 +1,7 @@
 # Microll
 
-[![Build Status](https://travis-ci.com/IceTimux/microll.svg?branch=master)](https://travis-ci.com/IceTimux/microll)
+[![Build Status](https://travis-ci.com/IceTimux/microll.svg?branch=master)](https://travis-ci.com/IceTimux/microll)
+[![codecov](https://codecov.io/gh/IceTimux/microll/branch/master/graph/badge.svg?token=0NYAD8DEKU)](https://codecov.io/gh/IceTimux/microll)
 
 Microll aggregates various RSS feeds into a single feed for consumption.
 
