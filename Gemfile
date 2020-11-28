@@ -8,4 +8,5 @@ source 'https://rubygems.org' do
   gem 'sinatra'
   gem 'simplecov'
   gem 'minitest'
+  gem 'codecov'
 end
