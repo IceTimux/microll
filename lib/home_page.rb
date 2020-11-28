@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'relative_time'
 
 class HomePage
@@ -8,7 +10,7 @@ class HomePage
         file_item = {
           'title' => item.title,
           'date' => item.date.iso8601,
-          'relative_time' => RelativeTime.in_words(DateTime.now, item.date).gsub('in ', '') + ' ago',
+          'relative_time' => "#{RelativeTime.in_words(DateTime.now, item.date).gsub('in ', '')} ago",
           'url' => item.url
         }
         file.puts file_item

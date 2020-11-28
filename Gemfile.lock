@@ -27,6 +27,7 @@ PLATFORMS
 
 DEPENDENCIES
   nokogiri!
+  rack!
   relative_time!
   sinatra!
 

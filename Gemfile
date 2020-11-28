@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org' do
-  gem 'sinatra'
   gem 'nokogiri'
-  gem 'relative_time'
   gem 'rack'
+  gem 'relative_time'
+  gem 'sinatra'
 end

@@ -1,7 +1,8 @@
+# frozen_string_literal: true
 
 require 'sinatra'
 require 'erb'
-require './lib/modules/xml'
+# require './lib/modules/xml'
 require './lib/item'
 require './lib/reader'
 require './lib/hacker_news_reader'
@@ -30,10 +31,9 @@ get '/' do
   end
 
   locals = {
-    :items => items,
-    :updated_at => File.mtime('./data/home_page.dat')
+    items: items,
+    updated_at: File.mtime('./data/home_page.dat')
   }
 
-  erb :index, :locals => locals
+  erb :index, locals: locals
 end
-

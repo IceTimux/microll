@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 module XML
-  def xml(url)
+  def self.xml(url)
     Nokogiri::XML(URI.open(url))
   end
 end

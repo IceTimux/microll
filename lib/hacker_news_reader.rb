@@ -1,17 +1,13 @@
-class HackerNewsReader < Reader
-  def initialize(url)
-    super
-  end
+# frozen_string_literal: true
 
+class HackerNewsReader < Reader
   def read
-    xml(@url).css('item').map do |item|
+    XML.xml(@url).css('item').map do |item|
       title = item.css('title').first.content
       date = item.css('pubDate').first.content
       url = item.css('link').first.content
-    
-      if title && date && url
-        Item.new(title: title, date: date, url: url)
-      end
+
+      Item.new(title: title, date: date, url: url) if title && date && url
     end
   end
 end
