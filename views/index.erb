@@ -19,11 +19,35 @@
     li {
       line-height: 1.33em;
     }
+
+    .bar {
+      /* background: #0d3764; */
+      background: #2573fb;
+      padding: 7px;
+    }
+
+    .logo {
+      color: white;
+      font-size: 20px !important;
+      font-weight: bold;
+    }
+
+    body {
+      padding: 0;
+      margin:0;
+    }
+
+    .fa {
+      padding-left: 5px;
+    }
     
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-  <h1>Microll</h1>
+  <div class="bar">
+    <span class="logo"><i class="fa fa-newspaper"></i> Microll</span>
+  </div>
   <ol>
     <% items.sort_by{ |key| key['date'] }.reverse.each do |item| %>
       <li>
